@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.menu li > a{
+    color: #fff;
+    padding: 0 10px;
+}
+
+.section1{
+    @apply border-[2px];
+    @apply py-4;
+    @apply px-8;
+}
+.section1 > h5{
+    @apply text-[#cfa58e];
+    @apply font-bold;
+    @apply py-2
+}
+
+section > h3 {
+    @apply text-[#272f54]
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+}
