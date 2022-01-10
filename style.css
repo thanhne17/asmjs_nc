@@ -27,7 +27,14 @@
 section > h3 {
     @apply text-[#272f54]
 }
+.search{
+    @apply p-2;
+}
+nav ul li {
+    @apply p-2;
+    @apply hover:bg-[#272f54];
 
+}
 footer{
     text-align: center;
     color: #fff;
