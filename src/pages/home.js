@@ -1,11 +1,11 @@
-import ActList from "../components/activitiList";
-import NewsList from "../components/newList";
-import Header from "../components/homeHeader";
-import banner from "../components/banner";
+import ActList from '../components/activitiList';
+import NewsList from '../components/newList';
+import Header from '../components/homeHeader';
+import banner from '../components/banner';
 
 const HomePage = {
-    print(){
-        return `
+  print() {
+    return `
         ${Header.print()}
         <main class="max-w-6xl m-auto my-[10px]">        
         ${banner.print()}
@@ -16,7 +16,7 @@ const HomePage = {
           Tên sinh viên
         </footer>
         `;
-    },
+  },
 };
 
 export default HomePage;

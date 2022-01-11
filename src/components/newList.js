@@ -1,8 +1,9 @@
-import Data from "../data";
+/* eslint-disable linebreak-style */
+import Data from '../data';
 
 const NewsList = {
-    print(){
-        return /* html */ `
+  print() {
+    return /* html */ `
         <section class="my-[15px]">
           <h3 class="font-bold mb-[15px]">TIN TỨC HỌC TẬP</h3>
           <div class="section grid-cols-3 grid gap-[20px]">
@@ -14,14 +15,11 @@ const NewsList = {
           trong thời gian học ở trường, để có chi phí trang trải nên anh chàng này đã đi làm thêm DJ
           và MC Hype cho một số quán Bar.</p>
           </div> 
-          ` ).join("")
-        }
+          `).join('')
+}
         </div>
-      </section>`
-
-            
-
-    }
+      </section>`;
+  },
 };
 
 export default NewsList;
