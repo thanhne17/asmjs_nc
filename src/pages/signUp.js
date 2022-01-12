@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
 // eslint-disable-next-line no-unused-vars
 const SignUp = {
-    print() {
-      return /* html */ `
+  print() {
+    return /* html */ `
       <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-md w-full space-y-8">
         <div>
@@ -36,7 +36,7 @@ const SignUp = {
             <div class="text-sm">
               <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
                 Quên mật khẩu?
-                  <a href="/signin_signup" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="/signin" class="font-medium text-indigo-600 hover:text-indigo-500">
                       /Đăng nhập
                   </a>
               </a>
@@ -58,8 +58,7 @@ const SignUp = {
       </div>
     </div>
           `;
-    },
-  };
-  
-  export default SignUp;
-  
+  },
+};
+
+export default SignUp;

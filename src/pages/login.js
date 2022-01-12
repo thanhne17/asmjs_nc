@@ -35,7 +35,7 @@ const Login = {
           <div class="text-sm">
             <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
               Quên mật khẩu?
-                <a href="/signin_signup/signup" class="font-medium text-indigo-600 hover:text-indigo-500">
+                <a href="signup" class="font-medium text-indigo-600 hover:text-indigo-500">
                     /Đăng ký
                 </a>
             </a>

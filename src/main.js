@@ -7,6 +7,7 @@ import NewsListPage from './pages/news';
 import detailNews from './pages/detailNews';
 import Login from './pages/login';
 import SignUp from './pages/signUp';
+import Dashboad from './pages/admin/dashboad';
 
 const route = new Navigo('/', { linksSelector: 'a' });
 
@@ -27,12 +28,15 @@ route.on({
   '/news/:id': ({ data }) => {
     render(detailNews.print(data.id));
   },
-  '/signin_signup': () => {
+  '/signin': () => {
     render(Login.print());
   },
-  '/signin_signup/signup': () => {
+  '/signup': () => {
     render(SignUp.print());
   },
+  '/admin/dashboad': () => {
+    render(Dashboad.print());
+  }
 });
 
 route.resolve();

@@ -5,7 +5,7 @@ const NewsList = {
   print() {
     return /* html */ `
         <section class="my-[15px]">
-          <h3 class="font-bold mb-[15px]">TIN TỨC HỌC TẬP</h3>
+          <h1 class="font-bold mb-[15px]">TIN TỨC HỌC TẬP</h1>
           <div class="section grid-cols-3 grid gap-[20px]">
         ${Data.map((Element) => /* html */`
         <div class="section1">
