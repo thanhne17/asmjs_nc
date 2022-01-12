@@ -36,7 +36,7 @@ route.on({
   },
   '/admin/dashboad': () => {
     render(Dashboad.print());
-  }
+  },
 });
 
 route.resolve();
