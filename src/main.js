@@ -2,12 +2,14 @@
 import Navigo from 'navigo';
 import HomePage from './pages/home';
 import Header from './components/homeHeader';
-import TuyenSinh from './pages/tuyensinh';
 import NewsListPage from './pages/news';
 import detailNews from './pages/detailNews';
 import Login from './pages/login';
 import SignUp from './pages/signUp';
 import Dashboad from './pages/admin/dashboad';
+import News from './pages/admin/news';
+import AddNews from './pages/admin/addNews';
+import Index_admin from './pages/admin';
 
 const route = new Navigo('/', { linksSelector: 'a' });
 
@@ -18,9 +20,6 @@ render(Header);
 route.on({
   '/': () => {
     render(HomePage.print());
-  },
-  '/ts': () => {
-    render(TuyenSinh.print());
   },
   '/news': () => {
     render(NewsListPage.print());
@@ -36,6 +35,12 @@ route.on({
   },
   '/admin/dashboad': () => {
     render(Dashboad.print());
+  },
+  '/admin/news': () => {
+    render(News.print());
+  },
+  '/admin/news/add': () => {
+    render(AddNews.print());
   },
 });
 

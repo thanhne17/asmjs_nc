@@ -10,7 +10,7 @@ const NewsList = {
         ${Data.map((Element) => /* html */`
         <div class="section1">
         <a href="/news/${Element.id}"><img src="${Element.img}" alt=""></a>
-        <h5>“Cây ngủ gật” Poly từng nghi ngờ đam mê MC Hype và cái kết</h5>
+        <h5><a href="/news/${Element.id}">“Cây ngủ gật” Poly từng nghi ngờ đam mê MC Hype và cái kết</a></h5>
         <p>Chia sẻ về hành trình “2 năm 4 tháng” tại FPT Polytechnic Tây Nguyên, Công Đức cho biết,
           trong thời gian học ở trường, để có chi phí trang trải nên anh chàng này đã đi làm thêm DJ
           và MC Hype cho một số quán Bar.</p>

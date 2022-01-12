@@ -1,15 +1,14 @@
 /* eslint-disable linebreak-style */
-const Dashboad = {
+const Admin_header = {
   print() {
     return /* html */ `
-      <html class="h-full bg-gray-100">
-      <body class="h-full">
-    <div class="min-h-full">
-      <nav class="bg-gray-800">
+        <nav class="bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
-              
+              <div class="flex-shrink-0">
+                <img class="h-8 w-18" src="https://upload.wikimedia.org/wikipedia/commons/2/20/FPT_Polytechnic.png" alt="Workflow">
+              </div>
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -106,28 +105,8 @@ const Dashboad = {
           </div>
         </div>
       </nav>
-    
-      <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">
-            Dashboard
-          </h1>
-        </div>
-      </header>
-      <main>
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <div class="px-4 py-6 sm:px-0">
-            <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
-            <section></section>
-          </div>
-          </div>
-          <!-- /End replace -->
-        </div>
-      </main>
-    </div>
-    
         `;
   },
 };
 
-export default Dashboad;
+export default Admin_header;
