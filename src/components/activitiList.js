@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 const ActList = {
-    print(){
-        return`
+  print() {
+    return `
         <section class="my-[15px]">
         <h3 class="font-bold mb-[15px]">HOẠT ĐỘNG SINH VIÊN</h3>
         <div class="section grid-cols-3 grid gap-[20px]">
@@ -27,8 +28,8 @@ const ActList = {
           </div>
         </div>
       </section>
-        `
-    }
+        `;
+  },
 };
 
 export default ActList;

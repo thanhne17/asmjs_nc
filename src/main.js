@@ -9,6 +9,7 @@ import SignUp from './pages/signUp';
 import Dashboad from './pages/admin/dashboad';
 import News from './pages/admin/news';
 import AddNews from './pages/admin/addNews';
+import EditNews from './pages/admin/editNews';
 import Index_admin from './pages/admin';
 
 const route = new Navigo('/', { linksSelector: 'a' });
@@ -41,6 +42,10 @@ route.on({
   },
   '/admin/news/add': () => {
     render(AddNews.print());
+  },
+  '/admin/news/:id/edit': ({ data }) => {
+    console.log(data)
+    render(EditNews.print(data.id));
   },
 });
 

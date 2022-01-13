@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+import Data from "../../data";
 const Dashboad = {
   print() {
     return /* html */ `
@@ -117,9 +118,11 @@ const Dashboad = {
       <main>
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <div class="px-4 py-6 sm:px-0">
-            <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
-            <section></section>
-          </div>
+            <section>
+              <span class="bg-[#f8fafc] border-2 m-4 p-4 rounded-lg shadow-2xl">
+                Số bài viết ${Data.length} 
+              </span>
+            </section>
           </div>
           <!-- /End replace -->
         </div>
