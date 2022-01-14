@@ -4,7 +4,7 @@ import Data from '../data';
 const NewsList = {
   print() {
     return /* html */ `
-        <section class="my-[15px]">
+        <section class="my-[15px] max-w-6xl m-auto">
           <h1 class="font-bold mb-[15px]">TIN TỨC HỌC TẬP</h1>
           <div class="section grid-cols-3 grid gap-[20px]">
         ${Data.map((Element) => /* html */`

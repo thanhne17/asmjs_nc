@@ -1,11 +1,13 @@
 /* eslint-disable linebreak-style */
 import Data from '../../data';
+import HeaderAdmin from './headerAdmin';
 
 const EditNews = {
   print(id) {
       const result = Data.find((Element) => Element.id === id);
     return /* html */ `
-<div>
+${HeaderAdmin.print()}    
+<div class="p-[10px]">
 
 <div class="hidden sm:block" aria-hidden="true">
 <div class="py-5">
@@ -17,9 +19,9 @@ const EditNews = {
 <div class="md:grid md:grid-cols-3 md:gap-6">
   <div class="md:col-span-1">
     <div class="px-4 sm:px-0">
-      <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
+      <h1 class="text-2xl font-medium leading-6 text-gray-900">Chỉnh sửa tin tức</h1>
       <p class="mt-1 text-sm text-gray-600">
-        Use a permanent address where you can receive mail.
+        Bài viết: ${result.name}
       </p>
     </div>
   </div>

@@ -9,6 +9,7 @@ import Dashboad from './pages/admin/dashboad';
 import News from './pages/admin/news';
 import AddNews from './pages/admin/addNews';
 import EditNews from './pages/admin/editNews';
+import footer from './components/footer';
 
 const route = new Navigo('/', { linksSelector: 'a' });
 
@@ -45,5 +46,4 @@ route.on({
     render(EditNews.print(data.id));
   },
 });
-
 route.resolve();
