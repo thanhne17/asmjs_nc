@@ -32,12 +32,12 @@ ${HeaderAdmin.print()}
           <div class="grid grid-cols-6 gap-6">
             <div class="col-span-6 sm:col-span-3">
               <label for="first-name" class="block text-sm font-medium text-gray-700">Tiêu đề</label>
-              <input type="text" name="first-name" id="first-name" autocomplete="given-name" value="${result.name}" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" value="${result.name}" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-[#aaa] rounded-md">
             </div>
 
             <div class="col-span-6 sm:col-span-4">
               <label for="email-address" class="block text-sm font-medium text-gray-700">Nội dung</label>
-              <textarea type="text" value="${result.content}" name="email-address" id="email-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full h-[100px] shadow-sm sm:text-sm border-gray-300 rounded-md">${result.content}</textarea>
+              <textarea type="text" value="${result.content}" name="email-address" id="email-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full h-[100px] shadow-sm sm:text-sm border-[#aaa] rounded-md">${result.content}</textarea>
             </div>
 
             <div class="col-span-6">
