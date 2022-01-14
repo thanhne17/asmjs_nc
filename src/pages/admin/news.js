@@ -160,7 +160,7 @@ const News = {
               </span>
             </td>
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-              <img src="${Element.img}">
+              <img src="${Element.img}" class="w-[150px]">
             </td>
             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
               <a href="/admin/news/${Element.id}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>

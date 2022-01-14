@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import Admin_header from '../../components/adminHeader';
 
 const Index_admin = {
