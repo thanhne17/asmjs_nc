@@ -3,22 +3,22 @@ import Data from '../data';
 
 const NewsList = {
   print() {
-    return /* html */ `
-        <section class="my-[15px] max-w-6xl m-auto">
-          <h1 class="font-bold mb-[15px]">TIN TỨC HỌC TẬP</h1>
-          <div class="section grid-cols-3 grid gap-[20px]">
-        ${Data.map((Element) => /* html */`
-        <div class="section1">
-        <a href="/news/${Element.id}"><img src="${Element.img}" alt=""></a>
-        <h5><a href="/news/${Element.id}">“Cây ngủ gật” Poly từng nghi ngờ đam mê MC Hype và cái kết</a></h5>
-        <p>Chia sẻ về hành trình “2 năm 4 tháng” tại FPT Polytechnic Tây Nguyên, Công Đức cho biết,
-          trong thời gian học ở trường, để có chi phí trang trải nên anh chàng này đã đi làm thêm DJ
-          và MC Hype cho một số quán Bar.</p>
-          </div> 
-          `).join('')
-}
-        </div>
-      </section>`;
+    return fetch('https://61e7a9ade32cd90017acbc1d.mockapi.io/post')
+      .then((posts) => posts.json())
+      .then((data) => /* html */ `
+    <section class="my-[15px] max-w-6xl m-auto">
+      <h1 class="font-bold mb-[15px]">TIN TỨC HỌC TẬP</h1>
+      <div class="section grid-cols-3 grid gap-[20px]">
+      ${data.map((Element) => /* html */`
+      <div class="section1">
+      <a href="/news/${Element.id}"><img src="${Element.img}" alt=""></a>
+      <h5><a href="/news/${Element.id}">${Element.title}</a></h5>
+      <p>${Element.content}</p>
+
+      </div> 
+      `).join('')}
+    </div>
+  </section>`);
   },
 };
 

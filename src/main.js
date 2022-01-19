@@ -9,37 +9,36 @@ import Dashboad from './pages/admin/dashboad';
 import News from './pages/admin/news';
 import AddNews from './pages/admin/addNews';
 import EditNews from './pages/admin/editNews';
-import footer from './components/footer';
 
 const route = new Navigo('/', { linksSelector: 'a' });
 
-const render = (content) => {
-  document.querySelector('.app').innerHTML = content;
+const render = async (content, id) => {
+  document.querySelector('.app').innerHTML = await content.print(id);
 };
 route.on({
   '/': () => {
-    render(HomePage.print());
+    render(HomePage);
   },
   '/news': () => {
-    render(NewsListPage.print());
+    render(NewsListPage);
   },
-  '/news/:id': ({ data }) => {
-    render(detailNews.print(data.id));
+  '/news/:id': (value) => {
+    render(detailNews, value.data.id);
   },
   '/signin': () => {
-    render(Login.print());
+    render(Login);
   },
   '/signup': () => {
-    render(SignUp.print());
+    render(SignUp);
   },
   '/admin/dashboad': () => {
-    render(Dashboad.print());
+    render(Dashboad);
   },
   '/admin/news': () => {
-    render(News.print());
+    render(News);
   },
   '/admin/news/add': () => {
-    render(AddNews.print());
+    render(AddNews);
   },
   '/admin/news/:id/edit': ({ data }) => {
     console.log(data);
