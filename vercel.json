@@ -3,6 +3,30 @@
         {
             "src":"/news",
             "dest":"/"
+        },
+        {
+            "src":"/",
+            "dest":"/"
+        },
+        {
+            "src":"/signin",
+            "dest":"/"
+        },
+        {
+            "src":"/signup",
+            "dest":"/"
+        },
+        {
+            "src":"/admin/dashboad",
+            "dest":"/"
+        },
+        {
+            "src":"/admin/news",
+            "dest":"/"
+        },
+        {
+            "src":"/admin/news/add",
+            "dest":"/"
         }
     ]
 }
