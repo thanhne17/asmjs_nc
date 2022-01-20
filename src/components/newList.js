@@ -1,9 +1,8 @@
 /* eslint-disable linebreak-style */
-import Data from '../data';
 
 const NewsList = {
   print() {
-    return fetch('https://61e7a9ade32cd90017acbc1d.mockapi.io/post')
+    return fetch('http://localhost:3001/post')
       .then((posts) => posts.json())
       .then((data) => /* html */ `
     <section class="my-[15px] max-w-6xl m-auto">
@@ -17,8 +16,8 @@ const NewsList = {
 
       </div> 
       `).join('')}
-    </div>
-  </section>`);
+      </div>
+    </section>`);
   },
 };
 

@@ -23,6 +23,7 @@ route.on({
     render(NewsListPage);
   },
   '/news/:id': (value) => {
+    console.log(value)
     render(detailNews, value.data.id);
   },
   '/signin': () => {
@@ -41,7 +42,6 @@ route.on({
     render(AddNews);
   },
   '/admin/news/:id/edit': ({ data }) => {
-    console.log(data);
     render(EditNews.print(data.id));
   },
 });

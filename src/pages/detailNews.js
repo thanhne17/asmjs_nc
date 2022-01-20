@@ -5,10 +5,9 @@ import footer from '../components/footer';
 
 const detailNews = {
   print(id) {
-    return fetch(`https://61e7a9ade32cd90017acbc1d.mockapi.io/post/${id}`)
-    .then((posts) => posts.json())
-    .then((Data)=>
-     /* html */`
+    return fetch(`http://localhost:3001/post/${id}`)
+      .then((posts) => posts.json())
+      .then((Data) =>/* html */`
             ${Header.print()}
             <div class="section1 max-w-6xl m-auto my-[10px]">
             <h5>${Data.title}</h5>
@@ -16,10 +15,7 @@ const detailNews = {
             <p>${Data.content}</p>
               </div>
             ${footer.print()}
-        `
-    )
-
-
+        `);
   },
 };
 
