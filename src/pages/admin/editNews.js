@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
-import Data from '../../data';
-import HeaderAdmin from './headerAdmin';
+import Data from "../../data";
+import HeaderAdmin from "./headerAdmin";
 
 const EditNews = {
-  print(id) {
-    const result = Data.find((Element) => Element.id === id);
-    return /* html */ `
+    print(id) {
+        const result = Data.find((Element) => Element.id === id);
+        return /* html */ `
 ${HeaderAdmin.print()}    
 <div class="p-[10px]">
 
@@ -59,7 +59,7 @@ ${HeaderAdmin.print()}
 </div>
 
         `;
-  },
+    },
 };
 
 export default EditNews;

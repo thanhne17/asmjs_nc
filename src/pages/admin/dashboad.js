@@ -1,9 +1,10 @@
 /* eslint-disable linebreak-style */
 import Data from "../../data";
 import HeaderAdmin from "./headerAdmin";
+
 const Dashboad = {
-  print() {
-    return /* html */ `
+    print() {
+        return /* html */ `
     <div class="min-h-full">
       ${HeaderAdmin.print()}
       <header class="bg-white shadow">
@@ -28,7 +29,7 @@ const Dashboad = {
     </div>
     
         `;
-  },
+    },
 };
 
 export default Dashboad;
