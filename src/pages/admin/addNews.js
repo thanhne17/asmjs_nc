@@ -85,17 +85,37 @@ const AddNews = {
     },
 
     AfterPrint() {
-        const formAdd = document.querySelector("#form-add-post");
-        formAdd.addEventListener("submit", (e) => {
-            e.preventDefault();
-            const apiFake = {
-                id_user: 7644441,
-                title: document.querySelector("#name").value,
-                content: document.querySelector("#content").value,
-                img: "http://placeimg.com/640/480",
-                // id: "12",
-            };
-            axios.post("http://localhost:3001/post", apiFake);
+        const img = document.querySelector("#file-upload");
+        img.addEventListener("change", (e) => {
+            const file = e.target.files[0];
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("upload_preset", "edlvdeks");
+
+            axios({
+                url: "https://api.cloudinary.com/v1_1/djsbi0bma/image/upload",
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-formendcoded",
+                },
+                data: formData,
+            }).then((res) => {
+                console.log(res);
+
+                const formAdd = document.querySelector("#form-add-post");
+                formAdd.addEventListener("submit", (ev) => {
+                    ev.preventDefault();
+                    const apiFake = {
+                        id_user: "",
+                        title: document.querySelector("#name").value,
+                        content: document.querySelector("#content").value,
+                        img: res.data.secure_url,
+                    // id: "12",
+                    };
+                    console.log(apiFake);
+                    axios.post("http://localhost:3001/post", apiFake);
+                });
+            });
         });
     },
 };
