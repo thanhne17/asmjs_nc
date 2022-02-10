@@ -42,10 +42,10 @@ route.on({
         render(AddNews);
     },
     "/admin/news/:id/edit": ({ data }) => {
-        render(EditNews.print(data.id));
+        render(EditNews, (data.id));
     },
     "/admin/news/:id/delete": ({ data }) => {
-        render(News.print(data.id));
+        render(News, (data.id));
     },
 });
 route.resolve();

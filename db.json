@@ -98,5 +98,32 @@
       "img": "https://res.cloudinary.com/djsbi0bma/image/upload/v1644291002/s8mj0b9lsbwjherq7nim.jpg",
       "id": "SXWdC9r"
     }
+  ],
+  "users": [
+    {
+      "email": "thanne@gmail.com",
+      "password": "$2a$10$GyDFKfD3ZQLL.oKmbuX7bOrl/cRz3Zm5YGRL.HAJW31aPjQzKH15q",
+      "id": 1
+    },
+    {
+      "email": "thanne@gmail.comh",
+      "password": "$2a$10$LTbZbhrpTsW.urlK/J32w.6F55HwYrZhDEwV3Dqe3/083zPfGldka",
+      "id": 2
+    },
+    {
+      "email": "thanne@gmail.com1",
+      "password": "$2a$10$DDwz5QNSnrkOGBM0k/JEr.51ta.5YNbhuRayizbjXRD8AUBU.wf.a",
+      "id": 3
+    },
+    {
+      "email": "lightspeedcdht7@gmail.com",
+      "password": "$2a$10$uI5UjI08VWY9Sd/EEE4OeusVsN8lQC5R8vYXG3AnB6I32MoLxQrYC",
+      "id": 4
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "$2a$10$MPXSOAndUmWV8ZC5HM1OxeMgssHBI70Fsq7oUDFSg0DNa4nsne6LG",
+      "id": 5
+    }
   ]
 }

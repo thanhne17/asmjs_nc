@@ -1,8 +1,8 @@
-/* eslint-disable linebreak-style */
-// eslint-disable-next-line no-unused-vars
+import { SignIn } from "../api/user";
+
 const Login = {
-  print() {
-    return /* html */ `
+    print() {
+        return /* html */ `
     <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-md w-full space-y-8">
       <div>
@@ -57,7 +57,21 @@ const Login = {
     </div>
   </div>
         `;
-  },
+    },
+    AfterPrint() {
+        document.querySelector("button").addEventListener("click", (e) => {
+            e.preventDefault();
+            SignIn({
+                email: document.querySelector("#email-address"),
+                password: document.querySelector("#password"),
+            }).then(() => {
+                alert("đăng nhập thành công");
+            })
+                .catch(() => {
+                    alert("đăng nhập thất bại");
+                });
+        });
+    },
 };
 
 export default Login;
